@@ -17,7 +17,7 @@ WORKDIR /app
 # 复制 package.json 和 package-lock.json（如果存在）
 COPY package*.json ./
 
-# 安装依赖
+# 安装依赖1
 RUN npm ci --only=production && npm cache clean --force
 
 # 复制应用文件
